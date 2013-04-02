@@ -13,7 +13,11 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
+
+" Version control plugins
 Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'flazz/vim-colorschemes'
