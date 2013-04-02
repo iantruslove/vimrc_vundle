@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'flazz/vim-colorschemes'
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
@@ -90,3 +91,9 @@ set listchars=""
 set listchars=tab:__
 set listchars+=trail:.
 
+""" Purdy colors please
+"colorscheme bensday
+"colorscheme af
+"colorscheme gentooish
+colorscheme anotherdark
+"colorscheme blacklight
