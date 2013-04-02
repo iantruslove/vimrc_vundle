@@ -27,6 +27,11 @@ Bundle 'scrooloose/nerdcommenter'
 " punctuation pairing
 Bundle 'kana/vim-smartinput'
 
+" Better tab completion
+Bundle 'ervandew/supertab'
+
+Bundle 'tpope/vim-surround'
+
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
@@ -43,7 +48,6 @@ Bundle 'FuzzyFinder'
 "jshint.vim
 "matchit
 "snipmate-snippets
-"supertab
 "taglist
 "tlib_vim
 "vcscommand
@@ -58,7 +62,6 @@ Bundle 'FuzzyFinder'
 "vim-slime
 "vim-snipmate
 "vim-sparkup
-"vim-surround
 "vim-unimpaired
 
 filetype plugin indent on     " required!
