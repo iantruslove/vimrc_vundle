@@ -18,6 +18,11 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'flazz/vim-colorschemes'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+
+" punctuation pairing
+Bundle 'kana/vim-smartinput'
+
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
