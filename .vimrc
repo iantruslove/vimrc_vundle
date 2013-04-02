@@ -143,3 +143,39 @@ set listchars+=trail:.
 "colorscheme gentooish
 colorscheme anotherdark
 "colorscheme blacklight
+
+" Configure CtrlP plugin
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_working_path_mode = 0 " just use vim's PWD as the root of the ctrlp search
+
+" :Shell command: runs a shell command and dumps output to a scratch buffer.
+" See http://vim.wikia.com/wiki/Display_output_of_shell_commands_in_new_window
+command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
+function! s:RunShellCommand(cmdline)
+  echo a:cmdline
+  let expanded_cmdline = a:cmdline
+  for part in split(a:cmdline, ' ')
+     if part[0] =~ '\v[%#<]'
+        let expanded_part = fnameescape(expand(part))
+        let expanded_cmdline = substitute(expanded_cmdline, part, expanded_part, '')
+     endif
+  endfor
+  botright new
+  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+  call setline(1, 'You entered:    ' . a:cmdline)
+  call setline(2, 'Expanded Form:  ' .expanded_cmdline)
+  call setline(3,substitute(getline(2),'.','=','g'))
+  execute '$read !'. expanded_cmdline
+  setlocal nomodifiable
+  1
+endfunction
+
+
+""" Autocommands """
+
+" autocmd!     " reset all pre-existing autocmds
+"autocmd VimEnter * NERDTree    " Open NERDTree on startup
+""""""""""""""""""
+" Configure coffeescript to be standard 2-space indents
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
