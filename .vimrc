@@ -17,6 +17,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'flazz/vim-colorschemes'
+Bundle 'scrooloose/nerdtree'
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
@@ -36,6 +37,8 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
+""""""""""""""""""""""
+" Key bindings:
 
 " Vim movement keys only
 inoremap  <Up>     <NOP>
@@ -47,6 +50,11 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+nmap ,nn :NERDTreeToggle<CR>
+
+
+""""""""""""""""""""""""
+" Vim settings
 
 set ruler 	  " Show line and col number
 
