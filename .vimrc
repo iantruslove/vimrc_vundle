@@ -31,6 +31,32 @@ Bundle 'FuzzyFinder'
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
+"" Previously installed plugins:
+"JavaScript-Indent
+"VimClojure
+"buffergator
+"ctrlp.vim
+"jshint.vim
+"matchit
+"snipmate-snippets
+"supertab
+"taglist
+"tlib_vim
+"vcscommand
+"vim-addon-mw-utils
+"vim-coffee-script
+"vim-filesearch
+"vim-liquid
+"vim-markdown
+"vim-markdown-jekyll
+"vim-markdown-preview
+"vim-powerline
+"vim-slime
+"vim-snipmate
+"vim-sparkup
+"vim-surround
+"vim-unimpaired
+
 filetype plugin indent on     " required!
 "
 " Brief help
