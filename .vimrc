@@ -19,9 +19,17 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 
 Bundle 'Lokaltog/vim-easymotion'
+
+" HTML Zen coding
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Nice colors
 Bundle 'flazz/vim-colorschemes'
+
+" Tree-based file browser.  `,nn` toggles.
 Bundle 'scrooloose/nerdtree'
+
+" Easy commenting and uncommenting. `\cc`
 Bundle 'scrooloose/nerdcommenter'
 
 " punctuation pairing
@@ -30,6 +38,7 @@ Bundle 'kana/vim-smartinput'
 " Better tab completion
 Bundle 'ervandew/supertab'
 
+" Commands to change surroundings (e.g. changing quotes, adding parens, ...)
 Bundle 'tpope/vim-surround'
 
 "Bundle 'tpope/vim-rails.git'
@@ -38,7 +47,6 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
-" ...
 
 " Clojure
 Bundle 'tpope/vim-fireplace'
@@ -49,17 +57,27 @@ let g:slime_target = "tmux"
 
 "Bundle 'vim-scripts/slimv.vim'
 
+" Nice fuzzy matching file finder
+Bundle 'kien/ctrlp.vim'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_working_path_mode = 0 " just use vim's PWD as the root of the ctrlp search"
+
+" Improved match (%) functionality for XML, HTML
+Bundle 'vim-scripts/matchit.zip'
+
+" Tab completion ftw
+Bundle 'ervandew/supertab'
+
+" Fancy status line
+Bundle 'Lokaltog/vim-powerline'
+let g:Powerline_symbols = 'fancy'
+
 "" Previously installed plugins:
 "JavaScript-Indent
 "VimClojure
 "buffergator
-Bundle 'kien/ctrlp.vim'
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
-let g:ctrlp_working_path_mode = 0 " just use vim's PWD as the root of the ctrlp search"
 "jshint.vim
-"matchit
 "snipmate-snippets
-Bundle 'ervandew/supertab'
 "taglist
 "tlib_vim
 "vcscommand
@@ -70,15 +88,11 @@ Bundle 'ervandew/supertab'
 "vim-markdown
 "vim-markdown-jekyll
 "vim-markdown-preview
-Bundle 'Lokaltog/vim-powerline'
-let g:Powerline_symbols = 'fancy'
-
 "vim-snipmate
-"vim-sparkup
 "vim-unimpaired
 
 filetype plugin indent on     " required!
-"
+
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install(update) bundles
