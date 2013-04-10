@@ -40,14 +40,26 @@ Bundle 'FuzzyFinder'
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
+" Clojure
+Bundle 'tpope/vim-fireplace'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-classpath.git'
+Bundle 'jpalardy/vim-slime'
+let g:slime_target = "tmux"
+
+"Bundle 'vim-scripts/slimv.vim'
+
 "" Previously installed plugins:
 "JavaScript-Indent
 "VimClojure
 "buffergator
-"ctrlp.vim
+Bundle 'kien/ctrlp.vim'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_working_path_mode = 0 " just use vim's PWD as the root of the ctrlp search"
 "jshint.vim
 "matchit
 "snipmate-snippets
+Bundle 'ervandew/supertab'
 "taglist
 "tlib_vim
 "vcscommand
@@ -58,8 +70,9 @@ Bundle 'FuzzyFinder'
 "vim-markdown
 "vim-markdown-jekyll
 "vim-markdown-preview
-"vim-powerline
-"vim-slime
+Bundle 'Lokaltog/vim-powerline'
+let g:Powerline_symbols = 'fancy'
+
 "vim-snipmate
 "vim-sparkup
 "vim-unimpaired
