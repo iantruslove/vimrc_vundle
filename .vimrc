@@ -22,6 +22,8 @@ Bundle 'Lokaltog/vim-easymotion'
 
 " HTML Zen coding
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+let g:sparkupExecuteMapping = '<leader>e'
+let g:sparkupNextMapping = '<leader>n'
 
 " Nice colors
 Bundle 'flazz/vim-colorschemes'
