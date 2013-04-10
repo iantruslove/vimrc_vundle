@@ -25,9 +25,15 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Nice colors
 Bundle 'flazz/vim-colorschemes'
+"colorscheme bensday
+"colorscheme af
+"colorscheme gentooish
+colorscheme anotherdark
+"colorscheme blacklight
 
 " Tree-based file browser.  `,nn` toggles.
 Bundle 'scrooloose/nerdtree'
+nmap ,nn :NERDTreeToggle<CR>
 
 " Easy commenting and uncommenting. `\cc`
 Bundle 'scrooloose/nerdcommenter'
@@ -115,7 +121,6 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
-nmap ,nn :NERDTreeToggle<CR>
 
 
 """"""""""""""""""""""""
@@ -164,16 +169,6 @@ set listchars=""
 set listchars=tab:__
 set listchars+=trail:.
 
-""" Purdy colors please
-"colorscheme bensday
-"colorscheme af
-"colorscheme gentooish
-colorscheme anotherdark
-"colorscheme blacklight
-
-" Configure CtrlP plugin
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
-let g:ctrlp_working_path_mode = 0 " just use vim's PWD as the root of the ctrlp search
 
 " :Shell command: runs a shell command and dumps output to a scratch buffer.
 " See http://vim.wikia.com/wiki/Display_output_of_shell_commands_in_new_window
