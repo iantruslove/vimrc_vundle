@@ -60,10 +60,17 @@ Bundle 'FuzzyFinder'
 Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-classpath.git'
+
+" Slime (for tmux)
 Bundle 'jpalardy/vim-slime'
 let g:slime_target = "tmux"
 
-"Bundle 'vim-scripts/slimv.vim'
+" Rainbow parens
+Bundle 'kien/rainbow_parentheses.vim'
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " Nice fuzzy matching file finder
 Bundle 'kien/ctrlp.vim'
