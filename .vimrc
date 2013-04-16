@@ -30,8 +30,9 @@ Bundle 'flazz/vim-colorschemes'
 "colorscheme bensday
 "colorscheme af
 "colorscheme gentooish
-colorscheme anotherdark
+"colorscheme anotherdark
 "colorscheme blacklight
+colorscheme blackbeauty
 
 " Tree-based file browser.  `,nn` toggles.
 Bundle 'scrooloose/nerdtree'
@@ -65,12 +66,21 @@ Bundle 'tpope/vim-classpath.git'
 Bundle 'jpalardy/vim-slime'
 let g:slime_target = "tmux"
 
+" Paredit
+Bundle 'vim-scripts/paredit.vim'
+
 " Rainbow parens
 Bundle 'kien/rainbow_parentheses.vim'
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Ruby
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'hallison/vim-ruby-sinatra'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-rake'
 
 " Nice fuzzy matching file finder
 Bundle 'kien/ctrlp.vim'
@@ -130,6 +140,9 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+" (D is the Command key)
+map [b :bprevious<CR> " Cycle to previous buffer
+map ]b :bnext<CR>     " Cycle to next buffer
 
 
 """"""""""""""""""""""""
