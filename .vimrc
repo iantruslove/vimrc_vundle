@@ -82,6 +82,9 @@ Bundle 'hallison/vim-ruby-sinatra'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rake'
 
+" JavaScript
+Bundle 'jelera/vim-javascript-syntax'
+
 " Nice fuzzy matching file finder
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
