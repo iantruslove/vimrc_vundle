@@ -84,7 +84,11 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rake'
 
 " JavaScript
-Bundle 'jelera/vim-javascript-syntax'
+"Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'godlygeek/tabular'
 
 " Puppet
 Bundle 'rodjek/vim-puppet'
