@@ -30,9 +30,10 @@ Bundle 'flazz/vim-colorschemes'
 "colorscheme bensday
 "colorscheme af
 "colorscheme gentooish
+colorscheme koehler
 "colorscheme anotherdark
 "colorscheme blacklight
-colorscheme blackbeauty
+"colorscheme blackbeauty
 
 " Tree-based file browser.  `,nn` toggles.
 Bundle 'scrooloose/nerdtree'
@@ -84,6 +85,9 @@ Bundle 'tpope/vim-rake'
 
 " JavaScript
 Bundle 'jelera/vim-javascript-syntax'
+
+" Puppet
+Bundle 'rodjek/vim-puppet'
 
 " Nice fuzzy matching file finder
 Bundle 'kien/ctrlp.vim'
