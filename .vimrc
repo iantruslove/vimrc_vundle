@@ -30,10 +30,12 @@ Bundle 'flazz/vim-colorschemes'
 "colorscheme bensday
 "colorscheme af
 "colorscheme gentooish
-colorscheme koehler
+"colorscheme koehler
 "colorscheme anotherdark
 "colorscheme blacklight
 "colorscheme blackbeauty
+"colorscheme koehler
+colorscheme kkruby
 
 " Tree-based file browser.  `,nn` toggles.
 Bundle 'scrooloose/nerdtree'
@@ -50,6 +52,9 @@ Bundle 'ervandew/supertab'
 
 " Commands to change surroundings (e.g. changing quotes, adding parens, ...)
 Bundle 'tpope/vim-surround'
+
+" tags
+Bundle 'majutsushi/tagbar'
 
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
@@ -84,7 +89,6 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rake'
 
 " JavaScript
-"Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
@@ -108,10 +112,12 @@ Bundle 'ervandew/supertab'
 Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'fancy'
 
+Bundle 'jeetsukumaran/vim-buffergator'
+nmap ,bb :BuffergatorToggle<CR>
+
 "" Previously installed plugins:
 "JavaScript-Indent
 "VimClojure
-"buffergator
 "jshint.vim
 "snipmate-snippets
 "taglist
