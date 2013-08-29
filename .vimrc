@@ -185,8 +185,8 @@ set smartcase     " ignore case if search pattern is all lowercase, case-sensiti
 set showtabline=2 " Always show the tab header
 
 " Tab settings
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop
