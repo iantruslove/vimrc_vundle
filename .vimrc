@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 " Version control plugins
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'git://repo.or.cz/vcscommand'
 
 Bundle 'Lokaltog/vim-easymotion'
 
