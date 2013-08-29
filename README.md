@@ -10,6 +10,9 @@ Then install all plugins:
 
 ## Tricks
 
+* `:set spell` runs a spellchecker.
+* `:set paste` to paste from the system clipboard without adding loads of spurious trailing parens and quotes.  `:set nopaste` turns that mode off.
+
 ### SVN Code Review Workflow
 
 I like being able to have a list of the changed files,
@@ -34,5 +37,5 @@ Navigate around that window, and `<C>-w f` to open the modified files, and
 `\cv` to open up the diff view. `<C>-w _` to make the window big,` ]c` and `[c`
 navigate around differences.
 Open up another file with `<C>-w f`, repeat `\cv` and the diff view will
-switch over to the new file.`]`')'
+switch over to the new file.
 
