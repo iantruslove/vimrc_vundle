@@ -39,3 +39,13 @@ navigate around differences.
 Open up another file with `<C>-w f`, repeat `\cv` and the diff view will
 switch over to the new file.
 
+### Git Code Review workflow
+
+Using a similar setup to above, here's a vim / git / fugitive way to do it.
+Assume the last three changes checked in need reviewing.
+
+* Get all the latest code: `git pull --rebase`
+* Check out the start point of the range to review: `git checkout --hard HEAD~3`
+* Create a patch file from the range to review: `git diff HEAD~3..HEAD > patchfile`
+* Apply that patchfile to the working copy: `git apply patchfile`
+* Fire up Vim, and use `:Gstatus` to see the modified files, and in each file `:Gdiff` to view the diff
